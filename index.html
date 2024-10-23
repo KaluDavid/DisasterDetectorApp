@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Disaster-Detector-Alert</title>
+    <link rel="shortcut icon" href="/imgs/DD.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <main>
+
+        <!-- Section -->
+        <section class="notification-section">
+            <!-- Alert -->
+            <div class="alert">
+                <!-- Hamburger-menu -->
+                <div class="menu" id="menu">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </div>
+                <div class="div2">
+                    <h3>Disaster Detector</h3>
+                    <small> Alerts</small>
+                </div>
+                <img src="/imgs/notifications.png" alt="notification bell" class="notification-bell" />
+            </div>
+
+            <!-- Notifications -->
+            <section class="notifications">
+                <div class="notification-item">
+                    <fieldset>
+                        <img src="/imgs/No App Icon.png" alt="location Icon">
+                        <p>
+                            <span>Title</span>
+                            <small>Description</small>
+                        </p>
+                    </fieldset>
+                    <p class="time" id="current-time"></p>
+                </div>
+                <div class="notification-item">
+                    <fieldset>
+                        <img src="/imgs/No App Icon.png" alt="location Icon">
+                        <p>
+                            <span>Title</span>
+                            <small>Description</small>
+                        </p>
+                    </fieldset>
+                    <p class="time" id="current-time"></p>
+                </div>
+
+
+                <div class="modal-container">
+                    <div class="modal-backdrop"></div>
+                    <div class="modal">
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Map view -->
+            <div class="mapDiv">
+                <button class="map"><img src="./imgs/Glyph.png" alt="map view" /> Map View</button>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <button class="btn animate-ping">
+            <span class="turn"></span>
+            <span class='round'></span>
+        </button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
